@@ -1,4 +1,6 @@
-com\qaengineer\utils\BaseTest.class
-com\qaengineer\tests\LoginTest.class
+com\qaengineer\utils\ConfigManager.class
 com\qaengineer\data\TestDataLoader.class
 com\qaengineer\data\UserData.class
+com\qaengineer\data\CsvDataLoader.class
+com\qaengineer\utils\BaseTest.class
+com\qaengineer\tests\LoginTest.class

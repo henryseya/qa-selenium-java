@@ -11,11 +11,13 @@ import io.qameta.allure.SeverityLevel;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import com.qaengineer.utils.ConfigManager;
+import com.qaengineer.data.CsvDataLoader;
 
 public class LoginTest extends BaseTest {
 
-    private static final String LOGIN_URL =
-            "https://the-internet.herokuapp.com/login";
+    private String LOGIN_URL =
+            ConfigManager.getInstance().getBaseUrl() + "/login";
 
     @Test(groups = {"smoke"})
     @Description("Login exitoso con credenciales válidas desde JSON externo")
@@ -62,5 +64,30 @@ public class LoginTest extends BaseTest {
     public Object[][] invalidUsersFromJson() {
         // Lee todos los usuarios inválidos del JSON
         return TestDataLoader.getInvalidUsers();
+    }
+    @Test(groups = {"regression"}, dataProvider = "invalidUsersFromCsv")
+    @Description("Login fallido — datos desde CSV externo")
+    @Severity(SeverityLevel.CRITICAL)
+    public void loginFallidoDesdeCSVTest(String username, String password, String expectedError) {
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage
+                .goTo(LOGIN_URL)
+                .enterUsername(username)
+                .enterPassword(password)
+                .clickLogin();
+
+        Assert.assertTrue(
+                loginPage.isFlashMessageVisible(),
+                "El mensaje de error debe ser visible"
+        );
+        Assert.assertTrue(
+                loginPage.getFlashMessage().contains(expectedError),
+                "Error esperado: " + expectedError
+        );
+    }
+
+    @DataProvider(name = "invalidUsersFromCsv")
+    public Object[][] invalidUsersFromCsv() {
+        return CsvDataLoader.getInvalidUsersFromCsv();
     }
 }

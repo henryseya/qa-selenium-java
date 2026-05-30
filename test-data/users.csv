@@ -1,0 +1,5 @@
+﻿username,password,expectedError
+wronguser,SuperSecretPassword!,Your username is invalid
+tomsmith,wrongpassword,Your password is invalid
+,SuperSecretPassword!,Your username is invalid
+blocked_user,SuperSecretPassword!,Your username is invalid

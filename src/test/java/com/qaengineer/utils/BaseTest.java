@@ -17,13 +17,19 @@ import org.testng.annotations.Listeners;
 public class BaseTest {
 
     protected WebDriver driver;
+    protected ConfigManager config = ConfigManager.getInstance();
 
     @BeforeMethod
     public void setUp() {
         WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless=new");
+
+        // Lee headless desde config.properties
+        if (config.isHeadless()) {
+            options.addArguments("--headless=new");
+        }
+
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--disable-gpu");
@@ -35,9 +41,10 @@ public class BaseTest {
 
     @AfterMethod
     public void tearDown(ITestResult result) {
-        if (result.getStatus() == ITestResult.FAILURE) {
-            takeScreenshot(result.getName());
-        }
+        // Screenshot en PASS y FAIL con estado en el nombre
+        String status = result.getStatus() == ITestResult.SUCCESS ? "PASS" : "FAIL";
+        takeScreenshot(status + "_" + result.getName());
+
         if (driver != null) {
             driver.quit();
         }

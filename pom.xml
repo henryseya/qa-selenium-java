@@ -15,10 +15,10 @@
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <selenium.version>4.18.1</selenium.version>
+    <selenium.version>4.31.0</selenium.version>
     <testng.version>7.9.0</testng.version>
     <allure.version>2.25.0</allure.version>
-    <webdrivermanager.version>5.7.0</webdrivermanager.version>
+    <webdrivermanager.version>5.9.2</webdrivermanager.version>
     <aspectj.version>1.9.20</aspectj.version>
   </properties>
 
@@ -52,7 +52,7 @@
       <version>${allure.version}</version>
     </dependency>
 
-    <!-- AspectJ — necesario para que Allure capture resultados -->
+    <!-- AspectJ -->
     <dependency>
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjweaver</artifactId>
@@ -65,6 +65,13 @@
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
       <version>2.16.1</version>
+    </dependency>
+
+    <!-- CDP para Chrome 148 — elimina el warning de DevTools -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-devtools-v135</artifactId>
+      <version>${selenium.version}</version>
     </dependency>
   </dependencies>
 
@@ -85,6 +92,9 @@
         <groupId>io.qameta.allure</groupId>
         <artifactId>allure-maven</artifactId>
         <version>2.12.0</version>
+        <configuration>
+          <resultsDirectory>${project.basedir}/allure-results</resultsDirectory>
+        </configuration>
       </plugin>
     </plugins>
   </build>

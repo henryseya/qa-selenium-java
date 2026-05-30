@@ -2,42 +2,42 @@
 <testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-30T19:18:13 CEST" name="QA Selenium Suite" finished-at="2026-05-30T19:18:59 CEST" duration-ms="45911">
+  <suite started-at="2026-05-30T19:45:54 CEST" name="QA Selenium Suite" finished-at="2026-05-30T19:46:42 CEST" duration-ms="47307">
     <groups>
       <group name="regression">
-        <method signature="LoginTest.loginFallidoDesdeCSVTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" name="loginFallidoDesdeCSVTest" class="com.qaengineer.tests.LoginTest"/>
-        <method signature="LoginTest.loginFallidoTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" name="loginFallidoTest" class="com.qaengineer.tests.LoginTest"/>
+        <method signature="LoginTest.loginFallidoDesdeCSVTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" name="loginFallidoDesdeCSVTest" class="com.qaengineer.tests.LoginTest"/>
+        <method signature="LoginTest.loginFallidoTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" name="loginFallidoTest" class="com.qaengineer.tests.LoginTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="LoginTest.loginExitosoTest()[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" name="loginExitosoTest" class="com.qaengineer.tests.LoginTest"/>
+        <method signature="LoginTest.loginExitosoTest()[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" name="loginExitosoTest" class="com.qaengineer.tests.LoginTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-05-30T19:18:13 CEST" name="All Tests" finished-at="2026-05-30T19:18:59 CEST" duration-ms="45911">
+    <test started-at="2026-05-30T19:45:54 CEST" name="All Tests" finished-at="2026-05-30T19:46:42 CEST" duration-ms="47307">
       <class name="com.qaengineer.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:14 CEST" name="setUp" finished-at="2026-05-30T19:18:19 CEST" duration-ms="5235" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:45:54 CEST" name="setUp" finished-at="2026-05-30T19:46:01 CEST" duration-ms="6594" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginExitosoTest()[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:19 CEST" name="loginExitosoTest" finished-at="2026-05-30T19:18:23 CEST" duration-ms="4371" status="PASS">
+        <test-method signature="loginExitosoTest()[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:01 CEST" name="loginExitosoTest" finished-at="2026-05-30T19:46:06 CEST" duration-ms="4830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginExitosoTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:24 CEST" name="tearDown" finished-at="2026-05-30T19:18:24 CEST" duration-ms="495" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:06 CEST" name="tearDown" finished-at="2026-05-30T19:46:07 CEST" duration-ms="564" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginExitosoTest status=SUCCESS method=LoginTest.loginExitosoTest()[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f] output={null}]]]>
+                <![CDATA[[TestResult name=loginExitosoTest status=SUCCESS method=LoginTest.loginExitosoTest()[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:24 CEST" name="setUp" finished-at="2026-05-30T19:18:26 CEST" duration-ms="1750" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:07 CEST" name="setUp" finished-at="2026-05-30T19:46:09 CEST" duration-ms="1907" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginFallidoDesdeCSVTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:26 CEST" name="loginFallidoDesdeCSVTest" data-provider="invalidUsersFromCsv" finished-at="2026-05-30T19:18:29 CEST" duration-ms="2827" status="PASS">
+        <test-method signature="loginFallidoDesdeCSVTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:09 CEST" name="loginFallidoDesdeCSVTest" data-provider="invalidUsersFromCsv" finished-at="2026-05-30T19:46:11 CEST" duration-ms="2664" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -58,22 +58,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFallidoDesdeCSVTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:29 CEST" name="tearDown" finished-at="2026-05-30T19:18:29 CEST" duration-ms="448" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:11 CEST" name="tearDown" finished-at="2026-05-30T19:46:12 CEST" duration-ms="444" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginFallidoDesdeCSVTest status=SUCCESS method=LoginTest.loginFallidoDesdeCSVTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f] output={null}]]]>
+                <![CDATA[[TestResult name=loginFallidoDesdeCSVTest status=SUCCESS method=LoginTest.loginFallidoDesdeCSVTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:29 CEST" name="setUp" finished-at="2026-05-30T19:18:31 CEST" duration-ms="1763" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:12 CEST" name="setUp" finished-at="2026-05-30T19:46:14 CEST" duration-ms="1893" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginFallidoDesdeCSVTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:31 CEST" name="loginFallidoDesdeCSVTest" data-provider="invalidUsersFromCsv" finished-at="2026-05-30T19:18:34 CEST" duration-ms="2665" status="PASS">
+        <test-method signature="loginFallidoDesdeCSVTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:14 CEST" name="loginFallidoDesdeCSVTest" data-provider="invalidUsersFromCsv" finished-at="2026-05-30T19:46:17 CEST" duration-ms="2770" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -94,22 +94,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFallidoDesdeCSVTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:34 CEST" name="tearDown" finished-at="2026-05-30T19:18:34 CEST" duration-ms="515" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:17 CEST" name="tearDown" finished-at="2026-05-30T19:46:17 CEST" duration-ms="505" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginFallidoDesdeCSVTest status=SUCCESS method=LoginTest.loginFallidoDesdeCSVTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f] output={null}]]]>
+                <![CDATA[[TestResult name=loginFallidoDesdeCSVTest status=SUCCESS method=LoginTest.loginFallidoDesdeCSVTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:34 CEST" name="setUp" finished-at="2026-05-30T19:18:36 CEST" duration-ms="1931" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:17 CEST" name="setUp" finished-at="2026-05-30T19:46:19 CEST" duration-ms="1892" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginFallidoDesdeCSVTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:36 CEST" name="loginFallidoDesdeCSVTest" data-provider="invalidUsersFromCsv" finished-at="2026-05-30T19:18:39 CEST" duration-ms="2663" status="PASS">
+        <test-method signature="loginFallidoDesdeCSVTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:19 CEST" name="loginFallidoDesdeCSVTest" data-provider="invalidUsersFromCsv" finished-at="2026-05-30T19:46:22 CEST" duration-ms="2602" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -130,22 +130,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFallidoDesdeCSVTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:39 CEST" name="tearDown" finished-at="2026-05-30T19:18:39 CEST" duration-ms="447" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:22 CEST" name="tearDown" finished-at="2026-05-30T19:46:22 CEST" duration-ms="447" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginFallidoDesdeCSVTest status=SUCCESS method=LoginTest.loginFallidoDesdeCSVTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f] output={null}]]]>
+                <![CDATA[[TestResult name=loginFallidoDesdeCSVTest status=SUCCESS method=LoginTest.loginFallidoDesdeCSVTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:39 CEST" name="setUp" finished-at="2026-05-30T19:18:41 CEST" duration-ms="1766" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:22 CEST" name="setUp" finished-at="2026-05-30T19:46:24 CEST" duration-ms="1739" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginFallidoDesdeCSVTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:41 CEST" name="loginFallidoDesdeCSVTest" data-provider="invalidUsersFromCsv" finished-at="2026-05-30T19:18:44 CEST" duration-ms="2738" status="PASS">
+        <test-method signature="loginFallidoDesdeCSVTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:24 CEST" name="loginFallidoDesdeCSVTest" data-provider="invalidUsersFromCsv" finished-at="2026-05-30T19:46:27 CEST" duration-ms="2854" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -166,22 +166,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFallidoDesdeCSVTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:44 CEST" name="tearDown" finished-at="2026-05-30T19:18:44 CEST" duration-ms="452" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:27 CEST" name="tearDown" finished-at="2026-05-30T19:46:27 CEST" duration-ms="455" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginFallidoDesdeCSVTest status=SUCCESS method=LoginTest.loginFallidoDesdeCSVTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f] output={null}]]]>
+                <![CDATA[[TestResult name=loginFallidoDesdeCSVTest status=SUCCESS method=LoginTest.loginFallidoDesdeCSVTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:44 CEST" name="setUp" finished-at="2026-05-30T19:18:46 CEST" duration-ms="1810" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:27 CEST" name="setUp" finished-at="2026-05-30T19:46:29 CEST" duration-ms="1719" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginFallidoTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:46 CEST" name="loginFallidoTest" data-provider="invalidUsersFromJson" finished-at="2026-05-30T19:18:49 CEST" duration-ms="2858" status="PASS">
+        <test-method signature="loginFallidoTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:29 CEST" name="loginFallidoTest" data-provider="invalidUsersFromJson" finished-at="2026-05-30T19:46:32 CEST" duration-ms="2654" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -202,22 +202,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFallidoTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:49 CEST" name="tearDown" finished-at="2026-05-30T19:18:49 CEST" duration-ms="435" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:32 CEST" name="tearDown" finished-at="2026-05-30T19:46:32 CEST" duration-ms="470" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginFallidoTest status=SUCCESS method=LoginTest.loginFallidoTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f] output={null}]]]>
+                <![CDATA[[TestResult name=loginFallidoTest status=SUCCESS method=LoginTest.loginFallidoTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:49 CEST" name="setUp" finished-at="2026-05-30T19:18:51 CEST" duration-ms="1713" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:32 CEST" name="setUp" finished-at="2026-05-30T19:46:34 CEST" duration-ms="1740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginFallidoTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:51 CEST" name="loginFallidoTest" data-provider="invalidUsersFromJson" finished-at="2026-05-30T19:18:54 CEST" duration-ms="2762" status="PASS">
+        <test-method signature="loginFallidoTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:34 CEST" name="loginFallidoTest" data-provider="invalidUsersFromJson" finished-at="2026-05-30T19:46:36 CEST" duration-ms="2612" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -238,22 +238,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFallidoTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:54 CEST" name="tearDown" finished-at="2026-05-30T19:18:54 CEST" duration-ms="466" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:36 CEST" name="tearDown" finished-at="2026-05-30T19:46:37 CEST" duration-ms="484" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginFallidoTest status=SUCCESS method=LoginTest.loginFallidoTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f] output={null}]]]>
+                <![CDATA[[TestResult name=loginFallidoTest status=SUCCESS method=LoginTest.loginFallidoTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:54 CEST" name="setUp" finished-at="2026-05-30T19:18:56 CEST" duration-ms="1760" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:37 CEST" name="setUp" finished-at="2026-05-30T19:46:39 CEST" duration-ms="1676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginFallidoTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:56 CEST" name="loginFallidoTest" data-provider="invalidUsersFromJson" finished-at="2026-05-30T19:18:59 CEST" duration-ms="2768" status="PASS">
+        <test-method signature="loginFallidoTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:39 CEST" name="loginFallidoTest" data-provider="invalidUsersFromJson" finished-at="2026-05-30T19:46:41 CEST" duration-ms="2612" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -274,11 +274,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFallidoTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f]" started-at="2026-05-30T19:18:59 CEST" name="tearDown" finished-at="2026-05-30T19:18:59 CEST" duration-ms="527" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7]" started-at="2026-05-30T19:46:41 CEST" name="tearDown" finished-at="2026-05-30T19:46:42 CEST" duration-ms="435" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginFallidoTest status=SUCCESS method=LoginTest.loginFallidoTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@7573e12f] output={null}]]]>
+                <![CDATA[[TestResult name=loginFallidoTest status=SUCCESS method=LoginTest.loginFallidoTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qaengineer.tests.LoginTest@77b9d0c7] output={null}]]]>
               </value>
             </param>
           </params>

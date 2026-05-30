@@ -19,30 +19,48 @@
     <testng.version>7.9.0</testng.version>
     <allure.version>2.25.0</allure.version>
     <webdrivermanager.version>5.7.0</webdrivermanager.version>
+    <aspectj.version>1.9.20</aspectj.version>
   </properties>
 
   <dependencies>
+    <!-- Selenium WebDriver -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
       <version>${selenium.version}</version>
     </dependency>
+
+    <!-- WebDriverManager -->
     <dependency>
       <groupId>io.github.bonigarcia</groupId>
       <artifactId>webdrivermanager</artifactId>
       <version>${webdrivermanager.version}</version>
     </dependency>
+
+    <!-- TestNG -->
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>${testng.version}</version>
       <scope>test</scope>
     </dependency>
+
+    <!-- Allure TestNG -->
     <dependency>
       <groupId>io.qameta.allure</groupId>
       <artifactId>allure-testng</artifactId>
       <version>${allure.version}</version>
     </dependency>
+
+    <!-- AspectJ — necesario para que Allure capture resultados -->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>${aspectj.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Jackson para leer JSON -->
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
@@ -60,6 +78,10 @@
           <suiteXmlFiles>
             <suiteXmlFile>testng.xml</suiteXmlFile>
           </suiteXmlFiles>
+          <!-- AspectJ agent — permite a Allure capturar los pasos @Step -->
+          <argLine>
+            -javaagent:"C:/Users/hherrera_iteggo/.m2/repository/org/aspectj/aspectjweaver/1.9.20/aspectjweaver-1.9.20.jar"
+          </argLine>
         </configuration>
       </plugin>
       <plugin>

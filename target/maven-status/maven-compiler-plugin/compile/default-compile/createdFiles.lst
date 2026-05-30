@@ -1,2 +1,3 @@
 com\qaengineer\utils\BasePage.class
+com\qaengineer\pages\SecurePage.class
 com\qaengineer\pages\LoginPage.class

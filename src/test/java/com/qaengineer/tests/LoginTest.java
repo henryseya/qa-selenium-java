@@ -1,6 +1,9 @@
 package com.qaengineer.tests;
 
+import com.qaengineer.data.TestDataLoader;
+import com.qaengineer.data.UserData;
 import com.qaengineer.pages.LoginPage;
+import com.qaengineer.pages.SecurePage;
 import com.qaengineer.utils.BaseTest;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
@@ -15,26 +18,29 @@ public class LoginTest extends BaseTest {
             "https://the-internet.herokuapp.com/login";
 
     @Test(groups = {"smoke"})
-    @Description("Login exitoso con credenciales válidas")
+    @Description("Login exitoso con credenciales válidas desde JSON externo")
     @Severity(SeverityLevel.BLOCKER)
     public void loginExitosoTest() {
+        // Lee datos desde users.json — no hardcodeados en el test
+        UserData user = TestDataLoader.getValidUser();
+
         LoginPage loginPage = new LoginPage(driver);
-        loginPage
+        SecurePage securePage = (SecurePage) loginPage
                 .goTo(LOGIN_URL)
-                .enterUsername("tomsmith")
-                .enterPassword("SuperSecretPassword!")
-                .clickLogin();
+                .enterUsername(user.getUsername())
+                .enterPassword(user.getPassword())
+                .clickLogin(new SecurePage(driver));
 
         Assert.assertTrue(
-                driver.getCurrentUrl().contains("/secure"),
-                "Debe redirigir a /secure tras login exitoso"
+                securePage.isLoaded(),
+                "El área segura debe estar cargada tras login exitoso"
         );
     }
 
-    @Test(groups = {"regression"}, dataProvider = "credencialesInvalidas")
-    @Description("Login fallido muestra mensaje de error")
+    @Test(groups = {"regression"}, dataProvider = "invalidUsersFromJson")
+    @Description("Login fallido muestra error correcto — datos desde JSON")
     @Severity(SeverityLevel.CRITICAL)
-    public void loginFallidoTest(String username, String password, String expectedMsg) {
+    public void loginFallidoTest(String username, String password, String expectedError) {
         LoginPage loginPage = new LoginPage(driver);
         loginPage
                 .goTo(LOGIN_URL)
@@ -47,16 +53,14 @@ public class LoginTest extends BaseTest {
                 "El mensaje de error debe ser visible"
         );
         Assert.assertTrue(
-                loginPage.getFlashMessage().contains(expectedMsg),
-                "Mensaje esperado: " + expectedMsg
+                loginPage.getFlashMessage().contains(expectedError),
+                "Error esperado: " + expectedError
         );
     }
 
-    @DataProvider(name = "credencialesInvalidas")
-    public Object[][] credencialesInvalidas() {
-        return new Object[][] {
-                { "wronguser",  "SuperSecretPassword!", "Your username is invalid" },
-                { "tomsmith",   "wrongpassword",        "Your password is invalid" },
-        };
+    @DataProvider(name = "invalidUsersFromJson")
+    public Object[][] invalidUsersFromJson() {
+        // Lee todos los usuarios inválidos del JSON
+        return TestDataLoader.getInvalidUsers();
     }
 }

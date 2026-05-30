@@ -34,6 +34,12 @@ public class LoginPage extends BasePage {
         return this;
     }
 
+    @Step("Hacer clic en Login — espera página de destino")
+    public SecurePage clickLogin(SecurePage nextPage) {
+        click(loginButton);
+        return nextPage;
+    }
+
     @Step("Hacer clic en Login")
     public LoginPage clickLogin() {
         click(loginButton);

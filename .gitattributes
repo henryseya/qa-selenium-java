@@ -1,0 +1,4 @@
+﻿# Forzar Java como lenguaje principal del repositorio
+*.java linguist-language=Java
+*.xml linguist-language=XML
+target/ linguist-generated=true

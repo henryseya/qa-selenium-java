@@ -1,24 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="QA Selenium Suite" verbose="1" parallel="false">
+<suite name="QA Selenium Suite" verbose="2">
 
-    <test name="Smoke Tests">
-        <groups>
-            <run>
-                <include name="smoke"/>
-            </run>
-        </groups>
-        <packages>
-            <package name="com.qaengineer.tests"/>
-        </packages>
-    </test>
-
-    <test name="Regression Tests">
-        <groups>
-            <run>
-                <include name="regression"/>
-            </run>
-        </groups>
+    <test name="All Tests">
         <packages>
             <package name="com.qaengineer.tests"/>
         </packages>

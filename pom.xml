@@ -78,10 +78,7 @@
           <suiteXmlFiles>
             <suiteXmlFile>testng.xml</suiteXmlFile>
           </suiteXmlFiles>
-          <!-- AspectJ agent — permite a Allure capturar los pasos @Step -->
-          <argLine>
-            -javaagent:"C:/Users/hherrera_iteggo/.m2/repository/org/aspectj/aspectjweaver/1.9.20/aspectjweaver-1.9.20.jar"
-          </argLine>
+          <argLine>-javaagent:${user.home}/.m2/repository/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar</argLine>
         </configuration>
       </plugin>
       <plugin>

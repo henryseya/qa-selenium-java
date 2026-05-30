@@ -34,14 +34,18 @@ jobs:
       - name: Ejecutar tests
         run: mvn test -B --no-transfer-progress
 
-      - name: Generar reporte Allure
+      - name: Verificar allure-results
         if: always()
-        run: mvn allure:report -B
+        run: |
+          echo "=== Contenido de target ==="
+          ls -la target/ || echo "target no existe"
+          echo "=== Buscando allure-results ==="
+          find . -name "allure-results" -type d 2>/dev/null || echo "No encontrado"
 
       - name: Subir reporte como artefacto
         uses: actions/upload-artifact@v4.6.2
         if: always()
         with:
-          name: allure-report
-          path: target/site/allure-maven-plugin/
+          name: allure-results
+          path: target/allure-results/
           retention-days: 30
